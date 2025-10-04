@@ -1,0 +1,212 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&family=Red+Hat+Text:ital,wght@0,300..700;1,300..700&display=swap');
+
+html {
+    background-color: hsl(20, 50%, 98%);
+    max-width: 1440px;
+    font-family: "Inconsolata", monospace;
+}
+
+.container {
+    display: flex;
+    margin: auto 0;
+    justify-content: space-between;
+    padding: 0 50px;
+}
+
+ h1 {
+    font-weight: 1000;
+    padding: 50px 50px 20px 50px;
+}
+
+.container .produtos {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+
+}
+
+.container .produtos .produto .imagem {
+    position: relative;
+}
+
+.container .produtos .produto .btn-add {
+    position: absolute;
+    top: 212px;
+    width: 150px;
+    height: 45px;
+    border: 1px solid hsl(12, 20%, 44%);
+    background-color: white;
+    border-radius: 50px;
+    left: 46px;
+}
+
+.container .produtos .produto .btn-add:hover {
+    color: hsl(14, 86%, 42%);
+    border-color: hsl(14, 86%, 42%);
+    transition-delay: 0.2s;
+}
+
+.btn-quantidade {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: absolute;
+    top: 212px;
+    width: 150px;
+    height: 45px;
+    border: 0;
+    background-color: hsl(14, 86%, 42%);
+    border-radius: 50px;
+    left: 46px;
+    color: white;
+}
+
+.container .produtos .produto .btn-add .iconis {
+    width: 21px;
+    height: 20px;
+}
+.container .produtos .produto .imagem .btn-add {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    cursor: pointer;
+}
+
+.container .produtos .produto .imagem img {
+    width:240px;
+    height: 236px;
+    border-radius: 10px;
+}
+
+.container .produtos .produto .informacoes {
+    padding: 40px 0 20px 0;
+}
+
+.container .produtos .produto .informacoes .nome-produto {
+    font-weight: 300;
+    color: hsl(12, 20%, 44%);
+    margin-bottom: 10px;
+}
+
+.container .produtos .produto .informacoes .descricao-produto {
+    font-weight: 500;
+    margin-bottom: 10px;
+    color: hsl(14, 65%, 9%);
+}
+
+.container .produtos .produto .informacoes .valor {
+    color: hsl(14, 86%, 42%);
+    font-weight: 500;
+}
+
+.container .carrinho {
+    padding: 20px;
+    background-color: white;
+    width: 380px;
+}
+
+.container .carrinho .titulo-carrinho {
+    color: hsl(14, 86%, 42%);
+    font-size: 24px;
+    font-weight: 1000;
+    background-color: white;
+    padding: 20px;
+}
+
+.container .carrinho .produtos-selecionados {
+    padding: 0 20px 20px 20px;
+    background-color: white;
+    width: 350px;
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.container .carrinho .produtos-selecionados .produto-no-carrinho {
+    display: flex;
+    justify-content: space-between;
+}
+
+.container .carrinho .produtos-selecionados .produto-no-carrinho .dados-da-selecao {
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+}
+
+.container .carrinho .produtos-selecionados .produto-no-carrinho .dados-da-selecao .nome-produto-selecionado {
+    font-weight: 500;
+}
+
+.container .carrinho .produtos-selecionados .produto-no-carrinho .dados-da-selecao .quantidade {
+    color: hsl(14, 86%, 42%);
+}
+
+.container .carrinho .produtos-selecionados .produto-no-carrinho .dados-da-selecao .quantidade span {
+    font-weight: 100;
+    color: black;
+}
+
+.container .carrinho .produtos-selecionados .produto-no-carrinho .dados-da-selecao .quantidade .total-selecao {
+    color: hsl(7, 20%, 60%);
+    font-weight: 400;
+}
+
+.container .carrinho .produtos-selecionados .borda {
+    border: 1px solid rgb(210, 205, 205);
+    margin-top: 20px;
+}
+
+.operador {
+    cursor: pointer;
+}
+
+.btn-deletar-selecao {
+    cursor: pointer;
+}
+
+.ocultar-botao {
+    display: none;
+}
+
+.total-da-compra {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 350px;
+}
+
+.total-da-compra .valor-pago{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0 20px 0;
+}
+
+.total-da-compra .valor-pago span {
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.total-da-compra .img-arvore {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background-color: hsl(13, 31%, 94%);
+    padding: 20px 28px;
+    border-radius: 10px;
+}
+
+.total-da-compra .img-arvore span {
+    font-weight: 600;
+}
+
+.total-da-compra .btn-confirmar-compra {
+    display: flex;
+    justify-content: center;
+    border-radius: 50px;
+    cursor: pointer;
+    background-color: hsl(14, 78%, 34%);
+    padding: 18px;
+    color: white;
+    font-weight: 700;
+    font-size: 18px;
+}
