@@ -4,10 +4,10 @@
 
 ## Bem Vindo Dev! 👋
 
-ESte é um projeto do frontendmentor que tem momo finalidade criar um esboço de um caardápio em JS
+Este é um projeto do frontendmentor que tem momo finalidade criar um esboço de um caardápio em JS
 
 [Frontend Mentor](https://www.frontendmentor.io) 
-**To do this challenge, you need a good understanding of HTML, CSS and JavaScript.**
+**Link do código inicial no site em HTML, CSS e JavaScript.**
 
   ## Como usar?
 
