@@ -1,9 +1,26 @@
-@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&family=Red+Hat+Text:ital,wght@0,300..700;1,300..700&display=swap');
-
 html {
-    background-color: hsl(20, 50%, 98%);
+    /* background-color: hsl(20, 50%, 98%); */
+    background-color: hsl(22, 8%, 28%);
     max-width: 1440px;
     font-family: "Inconsolata", monospace;
+}
+
+body {
+    position: relative;
+    width: 100%;
+}
+
+.compra-final {
+    position: absolute;
+    width: 300px;
+    height: 400px;
+    padding: 30px;
+    background-color: rgb(233, 230, 230);
+    top: 8%;
+    left: 35%;
+    transform: translate(-50, -50);
+    z-index: 1;
+    border-radius: 10px;
 }
 
 .container {
@@ -209,4 +226,37 @@ html {
     color: white;
     font-weight: 700;
     font-size: 18px;
+}
+
+.informacoes-da-compra {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.informacoes-da-compra .por-compra {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.informacoes-da-compra .informacoes p{
+    font-weight: 900;
+}
+
+.informacoes-da-compra .informacoes p span{
+    font-weight: 100;
+}
+
+.lista-de-compra .total-da-compra {
+    display: flex;
+    justify-content: space-between;
+}
+
+.lista-de-compra .total-da-compra p{
+    font-weight: 900;
+}
+
+.lista-de-compra .total-da-compra p span {
+    font-weight: 100;
 }

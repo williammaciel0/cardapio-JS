@@ -1,0 +1,14 @@
+@media(max-width: 575px){
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .container .produtos {
+        /* width: 600px;
+        display: flex;
+        flex-direction: column;
+        align-items: center; */
+        justify-content: center;
+    }
+}
