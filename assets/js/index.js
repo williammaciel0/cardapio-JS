@@ -136,14 +136,12 @@ for (let i = 0; i < produto.length; i++) {
             btnAdd.classList.remove('btn-add')
             btnAdd.classList.add('ocultar-botao')
             trocaDeBotao.innerHTML = `
-                <div class="imagem borda-com-cor">
-                    <img src="${imagem.src}" alt="${imagem.alt}">
+                    <img class="borda-com-cor" src="${imagem.src}" alt="${imagem.alt}">
                     <div class="btn-quantidade">
                         <p onclick="incrementORDecrement('-', ${i}, ${produto[i].id})" class='operador'>-</p>
                         <p class='quantidade-produtos'>0</p>
                         <p onclick="incrementORDecrement('+', ${i}, ${produto[i].id})" class='operador'>+</p>
                     </div>
-                </div>
                     `
         }
 
