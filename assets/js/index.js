@@ -19,9 +19,9 @@ confirmarCompra.addEventListener("click", (e) => {
     }, 0)
     console.log(totalCompra)
     let lisaDeCompras = document.querySelector('.total-da-compra')
-    
+
     let informacoesDaCompra = document.querySelector('.informacoes-da-compra')
-    
+
     if (totalCompra != 0) {
         lisaDeCompras.innerHTML = `<p> <span>Order Total</span> $${totalCompra}</p>`
         for (let i = 0; i <= compra.length; i++) {
@@ -136,12 +136,14 @@ for (let i = 0; i < produto.length; i++) {
             btnAdd.classList.remove('btn-add')
             btnAdd.classList.add('ocultar-botao')
             trocaDeBotao.innerHTML = `
+                <div class="imagem borda-com-cor">
                     <img src="${imagem.src}" alt="${imagem.alt}">
                     <div class="btn-quantidade">
                         <p onclick="incrementORDecrement('-', ${i}, ${produto[i].id})" class='operador'>-</p>
                         <p class='quantidade-produtos'>0</p>
                         <p onclick="incrementORDecrement('+', ${i}, ${produto[i].id})" class='operador'>+</p>
                     </div>
+                </div>
                     `
         }
 

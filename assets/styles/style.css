@@ -96,6 +96,13 @@ body {
     border-radius: 10px;
 }
 
+.borda-com-cor {
+    border: 4px solid hsl(14, 86%, 42%);
+    width: 248px;
+    height: 244px;
+    border-radius: 14px;
+}
+
 .container .produtos .produto .informacoes {
     padding: 40px 0 20px 0;
 }
